@@ -1,0 +1,48 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+
+.header {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos do feed de postagens */
+
+.feed {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos dos ícones de reação */
+
+.reaction-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reaction-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Adicione mais estilos para imagens e texto da postagem, se necessário */

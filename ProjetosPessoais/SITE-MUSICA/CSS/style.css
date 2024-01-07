@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #E6E6E6, #E6E6E6 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    background-color: #001022;
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px; /* Added margin between navbar links */
+}
+
+.img-logotipo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px; /* Adjusted left margin for the logo */
+}
+
+.menu {
+    display: flex; /* Use flexbox for menu */
+    font-size: 20px;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 15px;
+}
+
+/* Responsive Navbar */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 860px) {
+    .menu {
+        display: none;
+        flex-direction: column; /* Arrange menu items vertically */
+        background-color: #001022;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top: 60px; /* Adjusted top position */
+        left: 0;
+        right: 0;
+    }
+
+    .menu li {
+        margin: 10px 0; /* Adjusted margin for better spacing */
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: "Goham" ;
+    src: url(../Font/Gotham-Regular.woff);
+}
+span{
+    color: #f7f7f7;
+}
+.section_Principal .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin: 0 56px;
+}
+
+.section_Principal .Titulo {
+    font-family: "Goham";
+    margin: 51px 0 13px 0;
+    font-size: 6em;
+    color: #F2BA52;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.section_Principal img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section_Principal p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    padding-left: 1px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px; /* Adiciona margem abaixo do parágrafo */
+}
+
+.botao1 {
+    background-color: #001022;
+    border-radius: 13px;
+    padding: 14px 32px;
+    display: inline;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+.botao1 a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.imagemprin {
+    max-width: 600px; /* Defina o tamanho máximo desejado para a largura */
+    max-height: 600px; /* Defina o tamanho máximo desejado para a altura */
+    width: auto; /* Garante que a imagem mantenha a proporção */
+    height: auto; /* Garante que a imagem mantenha a proporção */
+    border-radius: 20px;
+    float: right;
+    margin: 40px 45px 15px 15px;
+}
+
+
+/*Sessao da Historia da Musica*/
+.historia-Musica{
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: justify;
+}
+
+.historia-Musica h1{
+    color: #252423;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.historia-Musica p{
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/*seção instrumentos*/
+ #instrumentos{
+    width: auto;
+    background-color: #ffffff;
+    margin: 13px 0 0 0 0;
+    padding: 30px;
+ }
+ #instrumentos,.s{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     color: #F2BA52;
+     text-align: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+     text-shadow: 0.1em 0.1em 0.2em  black;
+ }
+
+ .artista{
+    color: #333;
+    text-align: center;
+    margin-bottom: 34px;
+    text-shadow: none;
+ }
+.teste1{
+    color: #F2BA52;
+}
+
+/* Estilo para galeria */
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.image_musica {
+    position: relative;
+    width: 300px; /* Tamanho do container */
+    height: 300px; /* Altura do container */
+    overflow: hidden;
+}
+
+/* Para redimensionar as imagens */
+.image_musica img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensiona a imagem para preencher o container */
+}
+
+/* Estilos para o texto do overlay */
+.texto_galeria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Estilos para o texto do overlay */
+.texto_galeria .texto-overlay {
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilos para mostrar o overlay ao passar o mouse */
+.image_musica:hover .texto_galeria {
+    opacity: 1; /* Mostra o overlay ao passar o mouse */
+}
+.descricao {
+    font-size: 12px; /* Tamanho menor para o texto */
+    text-align: left; /* Alinhamento do texto */
+    margin-top: 30px; /* Espaçamento do texto com o texto acima */
+}

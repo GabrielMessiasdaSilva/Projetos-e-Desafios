@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACADEMIA XYZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <div class="logo">LIFE FITNESS</div>
+        <span class="biel">BIELZINHO</span>
+        <div class="navtest">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section id="home">
+        <div class="content">
+            <div class="image">
+                <img src="img/foto1.jpeg" alt="Imagem">
+            </div>
+            <div class="text">
+                <h1>Bem-vindo à Academia XYZ</h1>
+                <span>PERSISTA,<br />SUPERE,<br /></span>
+                <span class="vemos">CONQUISTE,<br />
+                </span><span>TRANSFORME-SE</span>
+                <a href="#contact" class="cta-button">Entre em contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="serviços">
+        <h2>Título de Serviços</h2>
+    </section>
+
+    <section id="classes">
+        <h2>Aulas</h2>
+        <ul>
+            <li>Aeróbica</li>
+            <li>Zumba</li>
+            <li>Spinning</li>
+            <li>Pump</li>
+            <li>HIIT</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+        <form>
+            <input type="text" placeholder="Seu Nome">
+            <input type="text" placeholder="Seu Email">
+            <textarea placeholder="Sua Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ACADEMIA BIEL.Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
